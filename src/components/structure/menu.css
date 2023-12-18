@@ -1,0 +1,79 @@
+/* styles.css */
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  height: 100vh;
+  position: fixed !important;
+}
+
+.menuItem {
+  margin-bottom: 10px;
+}
+
+.menuItem a {
+  display: block;
+  padding: 8px;
+  color: #434343;
+  text-decoration: none;
+  /* border: 1px solid #fff; */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.menuItem a:hover {
+  background-color: #214c9c;
+  color: #ffff !important;
+}
+
+.menuItem.active {
+  background-color: #214c9c;
+  color: #ffff !important;
+  border-radius: 4px;
+}
+.menuItem a.active {
+}
+.sidebar-heading {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "SoraBold";
+}
+.logout {
+  position: absolute;
+  bottom: 50px;
+}
+.log {
+  width: 200px !important;
+  outline: none !important;
+  border: none;
+  padding: 12px 0 12px 0;
+  color: white;
+  border-radius: 5px;
+  font-family: "SoraBold";
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.log:active {
+  opacity: 0.1 !important;
+}
+
+.spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffff;
+  border-top: 2px solid grey; /* transparent border for the empty space in the spinner */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* use the "spin" animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

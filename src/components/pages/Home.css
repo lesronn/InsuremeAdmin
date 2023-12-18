@@ -1,0 +1,57 @@
+.floatingBtn:active {
+  opacity: 0.1;
+}
+.floatingBtn {
+  display: "flex";
+  position: "absolute";
+  bottom: 20;
+  right: 20;
+  padding: 20;
+  border-radius: 2000;
+  outline: "none";
+  border: "none";
+  cursor: pointer;
+  transition: opacity 1s linear;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Additional styles for the modal container */
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: scroll;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Apply animation dynamically using a class */
+.slide-in {
+  animation-name: slide-in-right;
+}
+
+.slide-out {
+  animation-name: slide-out-right;
+}

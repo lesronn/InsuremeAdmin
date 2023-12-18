@@ -1,0 +1,26 @@
+.error-message {
+  color: red;
+  padding-top: 3px;
+}
+.form-group {
+  padding-bottom: 6px;
+}
+
+.add-button,
+.remove-button {
+  background-color: transparent !important;
+  color: black;
+  border: none;
+  /* padding: 8px 12px; */
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-button:hover,
+.remove-button:hover {
+  background-color: #45a049;
+}
+label {
+  font-family: "SoraRegular";
+}

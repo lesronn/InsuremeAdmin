@@ -1,0 +1,3 @@
+const userpoliciesFunction = () => {
+  return {};
+};
